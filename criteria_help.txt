@@ -1,0 +1,15 @@
+Computes the Akaike Information Criterion (AIC), Schwarz's Bayesian
+Information Criterion (BIC), the Hannan-Quinn criterion (HQC) and the corrected AIC (AICc), given ess (error sum of squares), the number of observations (n), 
+and the number of coefficients (k).
+
+The AIC is computed as in Akaike's original (1974) formulation, 
+namely AIC = -2L + 2k, where L denotes the maximized log-likelihood. 
+
+The BIC is computed as BIC = -2L + k log n.
+
+The HQC is computed as HQC = -2L + 2k log log n.
+
+The AICc is computed as AICc = AIC + (2*k(k+1)) / (n-k-1).
+
+A row vector containing the four criteria is available for
+assignment on return.
